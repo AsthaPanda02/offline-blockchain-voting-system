@@ -1,0 +1,114 @@
+/* body{font-family:sans-serif;background:#f4f7fb;margin:0;padding:20px}
+button{background:#0b5cff;color:white;padding:10px 14px;border:none;border-radius:6px;cursor:pointer} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eaf2ff, #f8fbff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #003399;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0055ff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #003ec9;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+}
+
+.candidate-card {
+  background: #f9fbff;
+  border: 2px solid #e0eaff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.candidate-card:hover {
+  background: #e9f1ff;
+  transform: scale(1.03);
+}
+
+.candidate-card.selected {
+  border-color: #0055ff;
+  background: #e3ecff;
+}
+
+.candidate-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.receipt {
+  background: #e6ffe6;
+  border: 1px solid #b3ffb3;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.nav {
+  background: #003399;
+  padding: 12px;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
