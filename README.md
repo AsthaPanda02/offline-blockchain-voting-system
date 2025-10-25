@@ -106,5 +106,6 @@ The project is divided into **three layers of trust**:
 
 ---
 
-## 🧱 Folder Structure
+
+
 
