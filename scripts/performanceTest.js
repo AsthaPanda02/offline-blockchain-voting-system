@@ -41,7 +41,7 @@ async function main() {
       txNumber: i + 1,
       latency: latency.toFixed(2),
       gasUsed: gasUsed,
-      txHash: receipt.transactionHash
+      txHash: receipt.hash
     });
   }
 
